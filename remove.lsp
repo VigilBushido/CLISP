@@ -1,0 +1,6 @@
+(defun remove-the (list)
+        (cond ((null list) nil)
+              ((equal 'the (first list))
+               (remove-the (rest list)))
+               (T (cons (first list)
+                        (remove-the (rest list))))))
