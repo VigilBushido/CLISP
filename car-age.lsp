@@ -1,0 +1,5 @@
+(defun mycar-age (x)
+    (cond (( < x 10 ) " It's older than that. ")
+          (( > x 90 ) "That's impossible.")
+          (( > x 10 ) "It's younger than that.")
+          (( = x 10 ) "You got it." )))
